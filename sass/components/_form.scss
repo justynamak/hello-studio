@@ -1,0 +1,25 @@
+//FORM
+
+//variables
+$form__font-size: 0.9rem;
+$form-element__color: #505050;
+//styles
+
+.form{
+    max-width: 35rem;
+    height: 100%;
+    
+    &__input, &__textarea{
+        @extend %form-element__appearance;
+                
+    }
+    &__input, &__textarea{
+        border: 0;
+        border-bottom: 0.125em solid $base__color;
+        padding-bottom: 0.5rem;
+        
+        &::placeholder{
+            color: $form-element__color;    
+        }
+    }
+}

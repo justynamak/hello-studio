@@ -1,0 +1,45 @@
+//FOOTER
+
+//variables
+
+//styles
+.footer{
+    background-image: url(.././hello-minimal/assets/footer.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+    &__list{
+        display: inline-flex;
+        justify-content: center;
+        width: 100%;
+        height: auto;
+    }
+    
+    &__item{
+        height: 100%;
+        display: block;
+        padding: 2rem 1.5rem;
+    }
+    
+    &__link{    
+        width: 3rem;
+        height: 3rem;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: inline-flex;
+        
+        &--twitter{
+            background-image: url(.././hello-minimal/assets/twitter.svg);
+        }
+        &--pinterest{
+            background-image: url(.././hello-minimal/assets/pinterest.svg); 
+        }
+        &--facebook{
+            background-image: url(.././hello-minimal/assets/facebook.svg);
+        }   
+    }
+}
+.hide{
+    visibility: hidden;
+}

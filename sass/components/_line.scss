@@ -1,0 +1,19 @@
+//LINE
+
+//variables
+$line__width:15rem;
+$line__height:0.4em;
+//styles
+
+.section-heading__line{
+    display: inline-block;
+    width: $line__width;
+    height: $line__height;
+    background-color: $base__color;
+    vertical-align: middle;
+    margin-left: 0.5em;
+
+    &--white{
+        background-color: $secondary__color;
+    }
+}

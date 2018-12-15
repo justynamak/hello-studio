@@ -1,0 +1,13 @@
+@mixin margin-auto{
+    margin: 0 auto;
+}
+@mixin circle($position-left){  
+    content:"";    
+    width:6em;
+    height: 6em;
+    border:0.7rem solid $base__color;
+    border-radius: 50%;   
+    z-index: -2;
+    position: absolute;
+    left:$position-left;
+}

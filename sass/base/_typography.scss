@@ -1,0 +1,48 @@
+//TYPOGRAPHY
+
+//variables
+$base__font-family:'Karla', sans-serif;
+$base__font-weight: 400;
+
+$secondary__font-family: 'Libre Baskerville', serif;
+
+$tertiary__font-family:'Montserrat', sans-serif;;
+
+$heading__font-size: 2.2rem;
+
+$base__text-color:#000;
+//styles
+body{
+    font-family: $base__font-family;
+    font-weight: $base__font-weight;
+}
+.section-heading{
+    display: inline-block;
+    font-family: $secondary__font-family;
+    font-size: $heading__font-size;
+    font-weight: normal;
+    margin-bottom: 1.5rem;
+}
+
+.section-subheading{    
+    padding: 1rem 0 2rem 0;
+    letter-spacing: 0.125em;
+    font-weight: $base__font-weight;
+    text-transform: uppercase;    
+
+    &--bolder{
+        font-weight: 700; 
+    }
+}
+
+.section-text{
+    line-height: 1.3;
+    
+    &--uppercase{
+        text-transform: uppercase;  
+    }
+}
+.adress{
+    font-style: normal;
+}
+

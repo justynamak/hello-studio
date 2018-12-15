@@ -1,0 +1,66 @@
+//NAV
+//variables
+$nav-item__font-size: 0.9rem;
+
+.nav{
+    width:55%;
+    max-width:60rem;
+    @include margin-auto;
+    @media #{$information-large-size}{
+        width:100%;                 
+    }
+    
+    &__list{
+        display: flex;   
+        padding: 1rem 0;
+        justify-content: center;
+        @media #{$information-large-size}{            
+            text-align:center;     
+        }
+        @media #{$information-medium-size}{
+            flex-direction: column;        
+        }
+    }
+    &__item{
+        font-family: $tertiary__font-family;
+        text-transform: uppercase;
+        font-size: $nav-item__font-size;
+        letter-spacing: 0.09em;
+        @media #{$information-large-size}{
+            flex:1 1 20%;    
+        }
+        @media #{$information-medium-size}{
+            padding: 1rem 0;        
+        }
+        
+    
+        &--offer-spacing{
+            padding-right:4vw;
+            @media #{$information-medium-size}{
+                padding-right:0;        
+            }
+        }
+        &--photos-spacing{
+            padding-right:7vw;
+            @media #{$information-medium-size}{
+                padding-right:0;        
+            }
+        }
+        &--team-spacing{
+            padding-left:7vw;
+            @media #{$information-medium-size}{
+                padding-left:0;        
+            }
+        }
+        &--contact-spacing{
+            padding-left: 4vw;
+            @media #{$information-medium-size}{
+                padding-left:0;        
+            }
+        }
+    }
+    &__link{
+        color:$base__text-color;    
+        display: block;  
+    }
+}

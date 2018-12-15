@@ -1,0 +1,18 @@
+ .submit{        
+        text-transform: uppercase;
+        background-color: $base__color;
+        border: 0.125em solid $base__color;
+        color: $form-element__color;   
+        cursor: pointer; 
+        transition: all 0.5s linear;    
+        height:3rem;
+        max-width: 25rem;
+        display: block;
+        margin: 1rem auto;
+        @extend %form-element__appearance;
+        
+        &:hover{
+            border: 0.125em solid $base__color;
+            background: $secondary__color;    
+        }
+    }
