@@ -134,6 +134,7 @@ body {
 .section-heading__line {
   display: inline-block;
   width: 15rem;
+  max-width: 100%;
   height: 0.4em;
   background-color: #e2e2e2;
   vertical-align: middle;
@@ -190,6 +191,12 @@ body {
   background-size: cover;
   background-position: center bottom;
   height: 60vh;
+  min-height: 12rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 }
 .header__title {
   font-family: "Libre Baskerville", serif;
@@ -198,6 +205,8 @@ body {
   line-height: 0.6;
   letter-spacing: 0.135em;
   width: 100%;
+  position: absolute;
+  top: -2%;
 }
 @media only screen and (max-width: 37.5rem) {
   .header__title {
@@ -223,9 +232,15 @@ body {
   white-space: nowrap;
   transform: translateY(0.2em);
 }
+@media only screen and (max-width: 53.125rem) and (orientation: landscape) {
+  .header__subtitle {
+    font-size: 2rem;
+    transform: translateY(0.4em);
+  }
+}
 @media only screen and (max-width: 37.5rem) {
   .header__subtitle {
-    font-size: 2.5rem;
+    font-size: 2rem;
     transform: translateY(0.4em);
   }
 }
@@ -235,7 +250,7 @@ body {
   width: min-content;
   width: -webkit-min-content;
   width: -moz-min-content;
-  margin: 5rem auto;
+  margin: 12vh auto;
 }
 
 .main-container {
@@ -321,7 +336,7 @@ body {
     margin: 0;
     align-self: center;
     padding-top: 2.5rem;
-    width: min-content;
+    width: auto;
   }
 }
 .offer__graphics {
@@ -344,13 +359,13 @@ body {
   letter-spacing: 0.125em;
 }
 .offer__img {
-  height: 25em;
+  max-height: 25em;
+  width: 100%;
 }
 
 .about {
   width: 100%;
-  height: 100vh;
-  min-height: max-content;
+  min-height: 100vh;
   background-image: url(.././hello-minimal/assets/about-bg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -397,8 +412,10 @@ body {
   left: -14%;
   bottom: 15%;
 }
-.contact__info__img {
-  width: 100%;
+@media only screen and (max-width: 53.125rem) {
+  .contact__img {
+    width: 100%;
+  }
 }
 
 .footer {
