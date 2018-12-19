@@ -76,12 +76,15 @@
             margin: 0;
             align-self: center;
             padding-top: 2.5rem;
-            width: min-content;             
+            width:auto;
+            
+            
         }
     }
     &__graphics{
         position: relative;
         height:40%;
+        
         
         &::before{
             @include circle(-16%);
@@ -93,15 +96,17 @@
         letter-spacing: 0.125em;
     }
     &__img{
-       height: 25em; 
+        max-height: 25em;
+        width: 100%;
+
+        
     }
 }
 
 //about-seection
 .about{
     width: 100%;
-    height: 100vh;
-    min-height: max-content;
+    min-height: 100vh;
     background-image: url(.././hello-minimal/assets/about-bg.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -138,10 +143,12 @@
         &::before{
             @include circle(-14%);
             bottom: 15%;            
-        }
-        &__img{
-            width: 100%;
-        }
+        }        
     }
+    &__img{            
+            @media #{$information-large-size}{
+                width:100%;      
+            }
+        }
     
 }
