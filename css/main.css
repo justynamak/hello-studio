@@ -25,7 +25,7 @@ body {
 }
 
 .section-heading {
-  display: inline-block;
+  display: block;
   font-family: "Libre Baskerville", serif;
   font-size: 2.2rem;
   font-weight: normal;
@@ -133,8 +133,8 @@ body {
 
 .section-heading__line {
   display: inline-block;
-  width: 15rem;
-  max-width: 100%;
+  width: 70%;
+  max-width: 15rem;
   height: 0.4em;
   background-color: #e2e2e2;
   vertical-align: middle;
