@@ -7,8 +7,8 @@ $line__height:0.4em;
 
 .section-heading__line{
     display: inline-block;
-    width: $line__width;
-    max-width: 100%;
+    width: 50%;
+    max-width: $line__width;
     height: $line__height;
     background-color: $base__color;
     vertical-align: middle;
