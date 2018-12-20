@@ -133,7 +133,7 @@ body {
 
 .section-heading__line {
   display: inline-block;
-  width: 70%;
+  width: 50%;
   max-width: 15rem;
   height: 0.4em;
   background-color: #e2e2e2;
