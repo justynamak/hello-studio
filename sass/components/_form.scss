@@ -16,7 +16,7 @@ $form-element__color: #505050;
     &__input, &__textarea{
         border: 0;
         border-bottom: 0.125em solid $base__color;
-        padding-bottom: 0.5rem;
+        padding-bottom: 0.5em;
         
         &::placeholder{
             color: $form-element__color;    

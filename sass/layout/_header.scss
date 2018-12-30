@@ -4,7 +4,7 @@
 $header-title__font-size: 2.4rem;
 $header-title-studio__font-size: 0.7rem;
 
-$header-subtitle__font-size:3.5rem;
+$header-subtitle__font-size:2.7em;
 
 //styles
 .header{
@@ -51,24 +51,23 @@ $header-subtitle__font-size:3.5rem;
             font-family:$secondary__font-family;
             text-align: center;    
             white-space: nowrap; 
-            transform: translateY(0.2em);            
-            @media #{$information-large-size} and (orientation: landscape){
-                font-size:2rem;
+            transform: translateY(0.1em); 
+            
+            @media #{$information-large-size} and (orientation: landscape){ 
+                font-size:2em;
                 transform: translateY(0.4em);
             }
-            @media #{$information-medium-size}{
-                font-size:2rem;
+            @media #{$information-large-size}{ 
+                font-size:2em;
                 transform: translateY(0.4em);
             }
-
     }
 
         &__subtitle-bg{
             background: rgba(255, 255, 255, 0.7);
-            height: 3rem;
+            height: 2.5em;
             width:min-content;
             width:-webkit-min-content;
-            width:-moz-min-content;
-            margin: 12vh auto; 
+            width:-moz-min-content;             
         }
 } 

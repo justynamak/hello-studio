@@ -12,7 +12,7 @@ $nav-item__font-size: 0.9rem;
     
     &__list{
         display: flex;   
-        padding: 1rem 0;
+        padding: 1em 0;
         justify-content: center;
         @media #{$information-large-size}{            
             text-align:center;     
@@ -30,7 +30,7 @@ $nav-item__font-size: 0.9rem;
             flex:1 1 20%;    
         }
         @media #{$information-medium-size}{
-            padding: 1rem 0;        
+            padding: 1em 0;        
         }
         
     

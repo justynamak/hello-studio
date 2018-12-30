@@ -3,28 +3,55 @@
 //variables
 $base__font-family:'Karla', sans-serif;
 $base__font-weight: 400;
+// Font-Size
+$base-font-size: 1em;
+// Line-Height
+$base-line-height: 1.5;
 
 $secondary__font-family: 'Libre Baskerville', serif;
 
 $tertiary__font-family:'Montserrat', sans-serif;;
 
-$heading__font-size: 2.2rem;
+$heading__font-size: 2.2em;
 
 $base__text-color:#000;
 //styles
 body{
     font-family: $base__font-family;
     font-weight: $base__font-weight;
+    
+    font-size: $base-font-size;
+    line-height: $base-line-height;
+
+    @media #{$mq-medium} {
+        font-size: $base-font-size*1.1;
+        line-height: $base-line-height*1.1;
+      }
+
+    @media #{$mq-large} {
+        font-size: $base-font-size*1.2;
+      }
+
+    @media #{$mq-xlarge} {
+        font-size: $base-font-size*1.4;
+      }
+
+    @media #{$mq-xxlarge} {
+        font-size: $base-font-size*1.6;
+      }
 }
-.section-heading{    
+
+.section-heading{
+    display: block;
     font-family: $secondary__font-family;
     font-size: $heading__font-size;
     font-weight: normal;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1em;
 }
 
-.section-subheading{    
-    padding: 1rem 0 2rem 0;
+.section-subheading{ 
+    font-size: 1em;
+    padding: 2em 0 1em 0;
     letter-spacing: 0.125em;
     font-weight: $base__font-weight;
     text-transform: uppercase;    
@@ -36,6 +63,11 @@ body{
 
 .section-text{
     line-height: 1.3;
+    font-size: 0.9em;
+    
+    @media #{$information-large-size}{
+        font-size: 1em;         
+    }
     
     &--uppercase{
         text-transform: uppercase;  

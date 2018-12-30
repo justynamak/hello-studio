@@ -22,18 +22,42 @@ a {
 body {
   font-family: "Karla", sans-serif;
   font-weight: 400;
+  font-size: 1em;
+  line-height: 1.5;
+}
+@media (min-width: 64em) {
+  body {
+    font-size: 1.1em;
+    line-height: 1.65;
+  }
+}
+@media (min-width: 85.375em) {
+  body {
+    font-size: 1.2em;
+  }
+}
+@media (min-width: 120em) {
+  body {
+    font-size: 1.4em;
+  }
+}
+@media (min-width: 160em) {
+  body {
+    font-size: 1.6em;
+  }
 }
 
 .section-heading {
   display: block;
   font-family: "Libre Baskerville", serif;
-  font-size: 2.2rem;
+  font-size: 2.2em;
   font-weight: normal;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1em;
 }
 
 .section-subheading {
-  padding: 1rem 0 2rem 0;
+  font-size: 1em;
+  padding: 2em 0 1em 0;
   letter-spacing: 0.125em;
   font-weight: 400;
   text-transform: uppercase;
@@ -44,6 +68,12 @@ body {
 
 .section-text {
   line-height: 1.3;
+  font-size: 0.9em;
+}
+@media only screen and (max-width: 53.125rem) {
+  .section-text {
+    font-size: 1em;
+  }
 }
 .section-text--uppercase {
   text-transform: uppercase;
@@ -65,7 +95,7 @@ body {
 }
 .nav__list {
   display: flex;
-  padding: 1rem 0;
+  padding: 1em 0;
   justify-content: center;
 }
 @media only screen and (max-width: 53.125rem) {
@@ -91,7 +121,7 @@ body {
 }
 @media only screen and (max-width: 37.5rem) {
   .nav__item {
-    padding: 1rem 0;
+    padding: 1em 0;
   }
 }
 .nav__item--offer-spacing {
@@ -151,7 +181,7 @@ body {
 .form__input, .form__textarea {
   border: 0;
   border-bottom: 0.125em solid #e2e2e2;
-  padding-bottom: 0.5rem;
+  padding-bottom: 0.5em;
 }
 .form__input::placeholder, .form__textarea::placeholder {
   color: #505050;
@@ -226,31 +256,30 @@ body {
   letter-spacing: 0.125em;
 }
 .header__subtitle {
-  font-size: 3.5rem;
+  font-size: 2.7em;
   font-family: "Libre Baskerville", serif;
   text-align: center;
   white-space: nowrap;
-  transform: translateY(0.2em);
+  transform: translateY(0.1em);
 }
 @media only screen and (max-width: 53.125rem) and (orientation: landscape) {
   .header__subtitle {
-    font-size: 2rem;
+    font-size: 2em;
     transform: translateY(0.4em);
   }
 }
-@media only screen and (max-width: 37.5rem) {
+@media only screen and (max-width: 53.125rem) {
   .header__subtitle {
-    font-size: 2rem;
+    font-size: 2em;
     transform: translateY(0.4em);
   }
 }
 .header__subtitle-bg {
   background: rgba(255, 255, 255, 0.7);
-  height: 3rem;
+  height: 2.5em;
   width: min-content;
   width: -webkit-min-content;
   width: -moz-min-content;
-  margin: 12vh auto;
 }
 
 .main-container {
@@ -260,12 +289,17 @@ body {
 }
 @media only screen and (max-width: 53.125rem) {
   .main-container {
+    width: 75%;
+  }
+}
+@media only screen and (max-width: 34.375rem) {
+  .main-container {
     width: 90%;
   }
 }
 
 .section {
-  margin-top: 3rem;
+  margin-top: 3em;
 }
 
 .small-column {
@@ -295,7 +329,7 @@ body {
 @media only screen and (max-width: 37.5rem) {
   .offer__lists {
     flex-direction: column;
-    margin-bottom: 2rem;
+    margin-bottom: 2em;
   }
 }
 .offer__section-lists {
@@ -307,11 +341,12 @@ body {
   }
 }
 .offer__list {
-  padding: 0 2rem 3rem 0;
+  padding: 0 2em 3em 0;
 }
 .offer__item {
-  padding: 1.5rem 0;
-  border-bottom: 0.0625rem solid #e2e2e2;
+  padding: 1em 0;
+  border-bottom: 0.0625em solid #e2e2e2;
+  font-size: 0.9em;
 }
 .offer__item--last {
   border-bottom: 0;
@@ -357,6 +392,7 @@ body {
 .offer__graphics-figcaption {
   text-transform: uppercase;
   letter-spacing: 0.125em;
+  font-size: 0.9em;
 }
 .offer__img {
   max-height: 25em;
